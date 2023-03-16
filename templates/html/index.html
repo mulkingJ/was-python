@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>String Conversion</title>
+  </head>
+  <body>
+    <form action="/upper" method="POST">
+      <label for="word">Enter a word:</label>
+      <input type="text" name="word" id="word">
+      <button type="submit">Convert to Upper Case</button>
+    </form>
+    <br>
+    <form action="/lower" method="POST">
+      <label for="word">Enter a word:</label>
+      <input type="text" name="word" id="word">
+      <button type="submit">Convert to Lower Case</button>
+    </form>
+    <br>
+    {% if word %}
+      <p>Result: {{ word }}</p>
+    {% endif %}
+  </body>
+</html>
